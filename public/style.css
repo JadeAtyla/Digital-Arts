@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+/* Blurred background container styling */
+#blurred-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    opacity: 0.8;
+    z-index: -1; /* Make sure it's behind everything else */
+  }
+  
+  /* Center the carousel container */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Main carousel image styling */
+  .carousel-inner .item img {
+    width: auto;
+    max-height: 90vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Ensure the main content is above the blurred background */
+  body {
+    position: relative;
+    overflow: hidden;
+  }
+
+  h3{
+    display: flex;
+    justify-content: center;
+  }
+  
